@@ -1,0 +1,55 @@
+.input-container {
+    display: grid;
+    margin: 40px auto;
+    grid-auto-flow: row;
+    width: 50%;
+    float: left;
+}
+.input-container .form-add{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.input-container .form-delete{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+.input-container input {
+    margin: 10px 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.input-container input::placeholder{
+    font-style: italic;
+    color: #999;
+}
+.input-container button {
+    margin: 10px;
+}
+.legenda{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+}
+@media(max-width: 900px){
+    .input-container .form-add{
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+    }
+    
+    .input-container .form-delete{
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+    }
+}
