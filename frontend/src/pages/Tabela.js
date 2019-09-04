@@ -21,9 +21,6 @@ class Tabela extends React.Component {
             items: result.items
           });
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         (error) => {
           this.setState({
             isLoaded: true,
@@ -43,11 +40,11 @@ class Tabela extends React.Component {
       return (
         <div className="items-container">
           {items.map(item => (
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title" key={item.name}>Ativo - {item.name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Sistema - {item.system}</h6>
-                <p class="card-subtitle mb-2 text-muted"><small>ID - {item._id}</small></p>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title" key={item._id}>Ativo - {item.name}</h5>
+                <h6 className="card-subtitle mb-2 text-muted">Sistema - {item.system}</h6>
+                <p className="card-subtitle mb-2 text-muted"><small>ID - {item._id}</small></p>
               </div>
             </div>
           ))}

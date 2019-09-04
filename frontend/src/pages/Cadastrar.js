@@ -53,16 +53,16 @@ export default function Cadastrar() {
                     />
                     <button type="submit" className="btn btn-danger">Excluir</button>
                 </form>
-            </div>
-            <div className="legenda">
-                <ul>
-                    <h5>Legenda</h5>
-                    <li><strong>GNCAS</strong> = Datacenter Campinas</li>
-                    <li>GNCAS<strong>N</strong> = Datacenter Norte</li>
-                    <li>GNCAS<strong>S</strong> = Datacenter Sul</li>
-                    <li>GNCASN<strong>TL</strong> = SO Linux Red Hat</li>
-                    <li>GNCASN<strong>TW</strong> = SO Windows</li>
-                </ul>
+                <div className="legenda">
+                    <ul>
+                        <h5>Legenda</h5>
+                        <li><strong>GNCAS</strong> = Datacenter Campinas</li>
+                        <li>GNCAS<strong>N</strong> = Datacenter Norte</li>
+                        <li>GNCAS<strong>S</strong> = Datacenter Sul</li>
+                        <li>GNCASN<strong>TL</strong> = SO Linux Red Hat</li>
+                        <li>GNCASN<strong>TW</strong> = SO Windows</li>
+                    </ul>
+                </div>
             </div>
             <Tabela />
         </div>

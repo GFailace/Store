@@ -1,24 +1,22 @@
 .input-container {
     display: grid;
     margin: 40px auto;
-    grid-auto-flow: row;
-    width: 50%;
-    float: left;
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%;
+    justify-items: center;
 }
 .input-container .form-add{
     margin: 0 auto;
-    display: flex;
     width: 100%;
 }
 
 .input-container .form-delete{
     margin: 0 auto;
-    display: flex;
     width: 100%;
 }
 .input-container input {
     margin: 10px 20px;
-    width: 100%;
+    width: 80%;
     height: 40px;
     font-size: 16px;
     border: none;
@@ -32,24 +30,55 @@
     margin: 10px;
 }
 .legenda{
-    width: 40%;
-    display: flex;
+    width: 80%;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 20px auto;
+    padding: 20px;
     border: 1px solid #dfdfdf;
     border-radius: 4px;
 }
-@media(max-width: 900px){
+.legenda ul{
+    list-style: none;
+}
+@media(max-width: 768px){
+    .input-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        justify-items: center;
+        text-align: center;
+    }
     .input-container .form-add{
         margin: 0 auto;
-        display: flex;
-        width: 100%;
+        width: 90%;
+        justify-items: center;
     }
     
     .input-container .form-delete{
         margin: 0 auto;
-        display: flex;
+        width: 80%;
+        justify-items: center;
+    }
+}
+@media(max-width: 420px){
+    .input-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
+        justify-items: center;
+        text-align: center;
+    }
+    .input-container .form-add{
+        margin: 0 auto;
+        width: 100%;
+        justify-items: center;
+    }
+    
+    .input-container .form-delete{
+        margin: 0 auto;
+        width: 100%;
+        justify-items: center;
     }
 }
