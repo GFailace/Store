@@ -1,6 +1,6 @@
 .items-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
     justify-items: center;
     align-items: center;
@@ -12,21 +12,38 @@
     width: 100%;
     height: 100%;
 }
-@media(max-width: 768px){
+form h4 {
+    text-align: center;
+}
+.searchBar {
+    display: flex;
+    width: 35%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #999999;
+}
+.searchBar::placeholder {
+    font-style: italic;
+    color: #999999;
+}
+@media(max-width: 1024px){
     .items-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        text-align: center;
-        width: 100%;
-        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-@media(max-width: 600px){
+@media(max-width: 768px){
     .items-container {
-        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 500px){
+    .items-container {
         grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-        width: 100%;
-        grid-gap: 5px;
+    }
+    .card{
+        width: 85%;
+    }
+    .searchBar {
+        width: 75%;
     }
 }

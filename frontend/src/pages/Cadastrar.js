@@ -8,7 +8,15 @@ export default function Cadastrar() {
     const [name, setName] = useState('')
     const [system, setSystem] = useState('')
     const [id, setId] = useState('')
+    /* const [searchId, setSearchId] = useState('')
 
+
+    async function handleSearch(e) {
+        e.preventDefault()
+
+        await api.search(`/api/item/${searchId}`)
+    }
+ */
     async function handleSubmit(e) {
         e.preventDefault()
 
@@ -44,7 +52,7 @@ export default function Cadastrar() {
                     <input placeholder="Digite o nome do Sistema"
                         value={system} onChange={e => setSystem(e.target.value)}
                     />
-                    <button type="submit" className="btn btn-dark">Cadastrar</button>
+                    <button type="submit" className="btn btn-danger">Cadastrar</button>
                 </form>
 
                 <form onSubmit={handleDelete} className="form-delete">

@@ -44,11 +44,7 @@
 }
 @media(max-width: 768px){
     .input-container{
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        justify-items: center;
-        text-align: center;
     }
     .input-container .form-add{
         margin: 0 auto;
