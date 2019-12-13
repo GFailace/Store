@@ -6,10 +6,10 @@ const routes = require('./routes')
 
 const server = express();
 
-mongoose.connect('mongodb://180.135.135.124:27017/inventario', {
+mongoose.connect('mongodb://localhost:27017/inventario', {
     "auth": { "authSource": "admin" },
-    "user": "gc13042",
-    "pass": "FailaceRS92",
+    "user": "",
+    "pass": "",
     useNewUrlParser: true
 })
 
